@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "ceb70a86-a739-4498-acdc-f2d5beb99b81",
+		"name": "flask_vk_parser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22640995"
+	},
+	"item": [
+		{
+			"name": "GET groups (all)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/groups?substr=a&limit=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"groups"
+					],
+					"query": [
+						{
+							"key": "substr",
+							"value": "a"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET groups (my)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/groups/my?substr=travel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"groups",
+						"my"
+					],
+					"query": [
+						{
+							"key": "substr",
+							"value": "travel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET attempts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/groups/my/attempts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"groups",
+						"my",
+						"attempts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET results",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/groups/my/results?page=2&per_page=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"groups",
+						"my",
+						"results"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "per_page",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
